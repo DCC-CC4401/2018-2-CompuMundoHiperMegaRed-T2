@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Coevaluacion</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron-fluid" style="height:100px">
+  <div class="container text-center">
+    <h1>Sistema de Coevaluacion</h1>      
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Usuario</a></li>
+        <li><a href="#"><span class=" glyphicon glyphicon-home"></span> Inicio </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#">CC5402 Proyecto de Software</a></li>
+        <li><a href="#">CC5401 Ingeniería de Software II</a></li>
+        <li><a href="#">CC4401 Ingeniería de Software</a></li>
+      </ul><br>
+    </div>
+    <div class="col-sm-8">
+
+      <!-- Codigo perfil -->
+      <div row="row-sm-9">
+        <h2> Ficha coevaluación:</h2>
+        <div class="col-sm-6">
+          <h3> Curso: </h3>
+          Proyecto de Software
+
+          <h3> Nombre: </h3>
+          Coevaluacion tarea 3.
+
+          <h3> Estado: </h3>
+          Abierta.
+
+          <h3> Fecha inicio: </h3>
+          10/10/2018.
+
+          <h3> Fecha termino: </h3>
+          20/10/2018.
+        </div>
+        <div class="col">
+          <h3>Acciones disponibles:</h3>
+          <br>
+          <button type="button" class="btn btn-primary">Editar fecha de inicio </button>
+          <br> <br>
+          <button type="button" class="btn btn-primary">Editar fecha de termino </button>
+        </div> 
+      </div>
+
+      <div class="row">
+        <div class="col-sm-10 px-10">
+          <h3>Resumen estudiantes:</h3>
+          <ul class="list-group">
+            <li class="list-group-item" style="width:85%">Rodrigo Fuentes <button type="button" class="btn btn-primary">Ver Resultados</button> <span class="badge badge-primary badge-pill">Contestada</span></li>
+            <li class="list-group-item" style="width:85%">Matías Ramírez <button type="button" class="btn btn-primary">Ver Resultados</button>  <span class="badge badge-primary badge-pill">Contestada</span></li>
+            <li class="list-group-item" style="width:85%">Jhon Salgado<span class="badge badge-primary badge-pill">No contestada</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>Pagina del curso CC4401</p>
+</footer>
+
+</body>
+</html>
